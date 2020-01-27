@@ -25,7 +25,7 @@ namespace SeleniumQuickStart.Pages
                 ?.FirstOrDefault();
         public IWebElement SaveLocationButton => _driver.FindElements(By.XPath(
             "//form[@class='geo']//descendant::button[contains(@class,'geo__button-save') and normalize-space()='Запомнить выбор']"))?.FirstOrDefault();
-        public IWebElement Questioner => _driver.FindElements(By.ClassName("basewebquestioner__modal"))?.FirstOrDefault();
+        public IWebElement QuestionerIcon => _driver.FindElements(By.ClassName("unipop__item_survey"))?.FirstOrDefault();
 
         public void Goto()
         {
